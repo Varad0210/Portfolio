@@ -1,0 +1,7 @@
+{
+  "name": "varad-portfolio",
+  "compatibility_date": "2025-10-06",
+  "assets": {
+    "directory": "./public"
+  }
+}
