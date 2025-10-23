@@ -33,6 +33,10 @@
   --resume-text: #222;
   --resume-border: rgba(0, 0, 0, 0.1);
   --resume-dot: #000;
+
+  --accent-color: #1abc9c;
+
+  --border-color: rgba(0, 0, 0, 0.1);
 }
 
 [data-theme="dark"] {
@@ -49,6 +53,8 @@
   --resume-text: #fff;
   --resume-border: rgba(255, 255, 255, 0.1);
   --resume-dot: #fff;
+
+  --border-color: rgba(255, 255, 255, 0.1);
 }
 
 html {
@@ -225,7 +231,7 @@ body {
   align-items: center;
   justify-content: center;
   color: #ffffff;
-  min-height: 160px;
+  min-height: 10px;
   text-align: center;
 }
 
@@ -382,4 +388,32 @@ body {
 .resume-item ul {
   list-style-type: square;
   padding-left: 20px;
+}
+
+/* --- Connect With Me Section --- */
+#connect {
+  padding: 80px 0 60px;
+  text-align: center;
+  border-top: 1px solid var(--border-color);
+}
+
+#connect .section-title h2 {
+  margin-bottom: 10px;
+}
+
+#connect .social-links a {
+  font-size: 28px;
+  margin: 0 12px;
+  transition: 0.3s ease;
+  color: var(--text-color);
+}
+
+#connect .social-links a:hover {
+  transform: translateY(-3px);
+  color: var(--accent-color);
+}
+
+#connect small {
+  opacity: 0.7;
+  font-size: 0.85rem;
 }
